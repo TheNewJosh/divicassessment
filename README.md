@@ -1,57 +1,59 @@
-###Project Setup Documentation
-1. Prerequisites
+### Project Setup Documentation
+## 1. Prerequisites
 Node.js: Install Node.js from nodejs.org.
 PostgreSQL: Install and configure PostgreSQL for the database.
 Prisma: Used as the ORM, ensure Prisma CLI is installed globally:
 bash
 Copy code
 npm install -g prisma
-2. Clone the Repository
+## 2. Clone the Repository
 bash
 Copy code
 git clone https://github.com/your-repo.git
 cd your-repo
-3. Install Dependencies
+## 3. Install Dependencies
 Install the required packages using npm:
 
 bash
 Copy code
 npm install
-4. Setup Environment Variables
+## 4. Setup Environment Variables
 Create a .env file at the root of your project and add the following:
 
 bash
 Copy code
 DATABASE_URL="postgresql://username:password@localhost:5432/dbname?schema=public"
 JWT_SECRET="your_jwt_secret_key"
-5. Set Up Prisma
+## 5. Set Up Prisma
 Initialize Prisma and migrate the database:
 
 bash
 Copy code
 npx prisma migrate dev --name init
 npx prisma generate
-6. Running the Application
+## 6. Running the Application
 Start the development server:
 
 bash
 Copy code
 npm run dev
-7. Running Tests
+## 7. Running Tests
 Jest is used for testing. Run the tests with:
 
 bash
 Copy code
 npm run test
-8. Endpoints
+## 8. Endpoints
 /api/graphql: Main GraphQL endpoint for interacting with the API.
-9. Tools and Libraries
+## 9. Tools and Libraries
 Next.js: Framework for the frontend and API routes.
 Apollo Server: For the GraphQL API.
 Prisma: ORM for PostgreSQL database.
 Jest: For testing.
 Additional Notes
 Ensure PostgreSQL is running and connected properly via the DATABASE_URL
+
+#### Find the postman collection on the file label divicassessment.postman_collection.json
 
 
 ### Building and running your application
